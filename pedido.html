@@ -9,29 +9,44 @@
 </head>
 
 <body>
+    <div class="container mt-5">
+        <form action="">
+            <fieldset>
+                <legend>Pedido Games</legend>
+                <div class="mb-3">
+                    <label for="produto" class="form-label">Produto</label>
+                    <input type="text" id="produto" class="form-control" />
+                </div>
+                <div class="mb-3">
+                    <label for="quantidade" class="form-label">Quantidade</label>
+                    <input type="text" id="quantidade" class="form-control" />
+                </div>
+                <div class="mb-3">
+                    <label for="valor" class="form-label">Valor</label>
+                    <input type="text" id="valor" class="form-control" />
+                </div>
+                <div class="mb-3">
+                    <button type="button" class="btn btn-primary">Adicionar</button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <div class="container mt-5">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Código</th>
+                    <th scope="col">Produto</th>
+                    <th scope="col">Quantidade</th>
+                    <th scope="col">Valor</th>
+                </tr>
+            </thead>
+            <tbody id="pedido-list">
+                <!-- Lista de pedidos será preenchida aqui -->
 
-    <form action="">
-        <fieldset>
-            <legend>Pedido Games</legend>
-            <div class="mb-3">
-                <label for="produto">Produto</label>
-                <input type="text" id="produto" />
-            </div>
-            <divclass="mb-3">
-                <label for="quantidade">Quantidade</label>
-                <input type="text" id="quantidade" />
-            </div>
-            <divclass="mb-3">
-                <label for="valor">Valor</label>
-                <input type="text" id="valor" />
-            </div>
-            <div class="mb-3">
-                <button type="button">Adicionar</button>
-            </div>
-        </fieldset>
-
-    </form>
-
+            </tbody>
+        </table>
+    </div>
 </body>
 
 </html>
